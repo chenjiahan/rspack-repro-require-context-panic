@@ -1,3 +1,3 @@
-import('./render').then(exports => {
-    exports.render()
-})
+const testFiles = require.context("./test", false, /\.test\.js$/);
+
+console.log(testFiles);
